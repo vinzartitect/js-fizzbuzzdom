@@ -21,3 +21,34 @@ for (let i = 1; i <= 100; i++) {
     }
 
 };
+
+
+
+// milestone 2 script di prova con elementi html aggiunti 
+
+// seleziono il container dove poi vanno i quadrati numerati
+let containerNumeri = document.querySelector(`.container_numeri`)
+
+for (let i = 1; i <= 100; i++) {
+
+    if (i % 3 === 0 && i % 5 === 0) {
+
+        containerNumeri.innerHTML += `<div class="box_quadrato fizzbuzz">fizzbuzz</div>`;
+
+    } else if (i % 3 === 0) {
+
+        containerNumeri.innerHTML += `<div class="box_quadrato fizz">fizz</div>`;
+
+    } else if (i % 5 === 0 ) {
+
+        containerNumeri.innerHTML += `<div class="box_quadrato buzz">buzz</div>`;
+
+    } else {
+
+        containerNumeri.innerHTML += `<div class="box_quadrato">${i}</div>`;
+
+    }
+
+};
+
+// milestone 3 stili aggiunti precedentemente ad ogni condizione

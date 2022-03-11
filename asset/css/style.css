@@ -15,3 +15,36 @@
 h1 {
     font-size: 100px;
 }
+
+.container_numeri {
+    width: 90%;
+    margin: 50px auto 0;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    color: black;
+}
+
+.box_quadrato {
+    width: calc((100% / 7) - 40px);
+    aspect-ratio: 1;
+    margin: 0 20px 40px;
+    background-color: #1389b2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.fizz {
+    background-color: #0bd6a1;
+}
+
+.buzz {
+    background-color: #ffd166;
+}
+
+.fizzbuzz {
+    background-color: #f0466f;
+}
